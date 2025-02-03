@@ -1,0 +1,26 @@
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Box model styles */
+.box {
+    width: 300px;            /* Content width */
+    padding: 20px;           /* Space between content and border */
+    border: 5px solid #333;  /* Border around the box */
+    margin: 30px;            /* Space around the box */
+    background-color: #ffffff; /* Background color for the content */
+    box-sizing: border-box;   /* Makes the padding and border part of the width */
+    text-align: center;      /* Center the text inside the box */
+}
+
+/* Optional: Add hover effect for better UX */
+.box:hover {
+    background-color: #f0f0f0;
+}
