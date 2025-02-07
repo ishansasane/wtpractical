@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ishan Sasane - IT Engineer Portfolio</title>
+    <title>イシャン・ササネ - IT エンジニアのポートフォリオ</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- Custom Styles -->
     <style>
@@ -89,12 +89,13 @@
 
         <!-- Navigation Links -->
         <div id="menu" class="hidden md:flex md:space-x-6 flex-col md:flex-row absolute md:static w-full left-0 top-16 bg-gray-800 md:bg-transparent z-50 md:w-auto md:items-center">
-            <a href="#about" class="block p-4 md:p-0 text-white hover:text-blue-400 transition-colors">About</a>
-            <a href="#experience" class="block p-4 md:p-0 text-white hover:text-blue-400 transition-colors">Experience</a>
-            <a href="#skills" class="block p-4 md:p-0 text-white hover:text-blue-400 transition-colors">Skills</a>
-            <a href="#projects" class="block p-4 md:p-0 text-white hover:text-blue-400 transition-colors">Projects</a>
-            <a href="#contact" class="block p-4 md:p-0 text-white hover:text-blue-400 transition-colors">Contact</a>
-            <button id="language-toggle" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">日本語</button>
+            <a href="#about" class="block p-4 md:p-0 text-white hover:text-blue-400 transition-colors">について</a>
+            <a href="#experience" class="block p-4 md:p-0 text-white hover:text-blue-400 transition-colors">経験</a>
+            <a href="#skills" class="block p-4 md:p-0 text-white hover:text-blue-400 transition-colors">スキル</a>
+            <a href="#projects" class="block p-4 md:p-0 text-white hover:text-blue-400 transition-colors">プロジェクト</a>
+            <a href="#contact" class="block p-4 md:p-0 text-white hover:text-blue-400 transition-colors">接触</a>
+            <button id="language-toggle" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">English</button>
+
         </div>
     </div>
 </nav>
@@ -108,18 +109,17 @@
     menu.classList.toggle('hidden');
   });
 
-  // Language toggle functionality
+    // Language toggle functionality
 document.getElementById("language-toggle").addEventListener("click", function() {
     let currentText = this.innerText;
     if (currentText === "日本語") {
         // Redirect to a Japanese version of the page or another file
-        window.location.href = "japanese-portfolio.html"; // replace with your file path
+        window.location.href = "portfolio.html"; // replace with your file path
     } else {
         // Redirect back to the English version
         window.location.href = "portfolio.html"; // replace with your file path
     }
 });
-
 </script>
 
 
@@ -127,9 +127,9 @@ document.getElementById("language-toggle").addEventListener("click", function() 
     <!-- Hero Section -->
     <section class="h-screen flex items-center justify-center gradient-bg relative">
         <div class="text-center">
-            <h1 class="text-6xl font-bold gradient-text">Ishan Sasane</h1>
+            <h1 class="text-6xl font-bold gradient-text">イシャン・ササネ</h1>
             <p class="mt-4 text-xl text-gray-200">Jack of all trades, master of none, though oftentimes better than a master of one.</p>
-            <a href="#about" class="mt-8 inline-block px-8 py-3 glass hover-scale text-white rounded-lg">Explore My Work</a>
+            <a href="#about" class="mt-8 inline-block px-8 py-3 glass hover-scale text-white rounded-lg">私の作品を探索する</a>
         </div>
         <!-- Custom Shape Divider -->
         <div class="custom-shape">
@@ -142,58 +142,53 @@ document.getElementById("language-toggle").addEventListener("click", function() 
     <!-- About Section -->
     <section id="about" class="py-20 bg-gray-900">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold gradient-text mb-8 text-center">About Me</h2>
+            <h2 class="text-4xl font-bold gradient-text mb-8 text-center">私について</h2>
             <div class="glass p-8 rounded-lg max-w-3xl mx-auto">
                 <p class="text-gray-300 leading-relaxed text-center">
-                    I am an enthusiastic and innovative Android Developer looking to apply my technical
-                    skills in a dynamic team environment. With strong fundamentals in Android
-                    development and hands-on experience in mobile and web application development,
-                    I excel across multiple platforms. My pride lies in delivering high-quality projects,
-                    strong self-management, and teamwork.
+                    私は熱心で革新的な Android 開発者で、自分の技術を応用したいと考えています。
+                    ダイナミックなチーム環境でのスキル。 Android の強力な基礎を備えた
+                    モバイルおよび Web アプリケーション開発における開発および実践経験、
+                    私は複数のプラットフォームにわたって優れています。高品質なプロジェクトを提供することが私の誇りです。
+                    強い自己管理力とチームワーク。
                 </p>
             </div>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold gradient-text mb-8 text-center">Experience</h2>
-            <div class="glass p-8 rounded-lg">
-                <!-- Tabs -->
-                <div class="tabs-container bg-gray-700 rounded-lg overflow-hidden">
-                    <div class="flex">
-                        <button onclick="showTab('tab1')" class="tab-button active w-full py-4 text-center bg-gray-800 text-white hover:bg-gray-600 focus:outline-none">Python Development</button>
-                        <button onclick="showTab('tab2')" class="tab-button w-full py-4 text-center bg-gray-800 text-white hover:bg-gray-600 focus:outline-none">Editorial Intern</button>
-                    </div>
-                </div>
-                <!-- Tab Content -->
-                <div id="tab1" class="tab-content active mt-4">
-                    <h3 class="text-2xl font-bold text-blue-400">Python Development</h3>
-                    <p class="text-gray-300 mt-2">ESTEEM | Jun 2022 - Oct 2022</p>
-                    <ul class="list-disc list-inside text-gray-300 mt-4">
-                        <li>Completed a 4-month in-plant training program centered on Python
-                            development, where I gained valuable, hands-on experience in real-world
-                            applications.
-                            Contributed to projects that involved data processing, automation, and web
-                            development, effectively applying Python programming principles.
-                            Improved my problem-solving and debugging skills by actively participating in
-                            coding exercises and collaborating on various projects.</li>
-                    </ul>
-                </div>
-                <div id="tab2" class="tab-content mt-4">
-                    <h3 class="text-2xl font-bold text-blue-400">Editorial Intern</h3>
-                    <p class="text-gray-300 mt-2">Vaave| Jun 2022 - Dec 2023</p>
-                    <ul class="list-disc list-inside text-gray-300 mt-4">
-                        <li>Collaborated with the editorial team to create and edit engaging content for
-                            blogs, newsletters, and social media platforms, enhancing brand visibility and
-                            user engagement .</li>
-                    </ul>
+<!-- 経歴セクション -->
+<section id="experience" class="py-20 bg-gray-800">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold gradient-text mb-8 text-center">経験</h2>
+        <div class="glass p-8 rounded-lg">
+            <!-- タブ -->
+            <div class="tabs-container bg-gray-700 rounded-lg overflow-hidden">
+                <div class="flex">
+                    <button onclick="showTab('tab1')" class="tab-button active w-full py-4 text-center bg-gray-800 text-white hover:bg-gray-600 focus:outline-none">Python開発</button>
+                    <button onclick="showTab('tab2')" class="tab-button w-full py-4 text-center bg-gray-800 text-white hover:bg-gray-600 focus:outline-none">編集インターン</button>
                 </div>
             </div>
+            <!-- タブコンテンツ -->
+            <div id="tab1" class="tab-content active mt-4">
+                <h3 class="text-2xl font-bold text-blue-400">Python開発</h3>
+                <p class="text-gray-300 mt-2">ESTEEM | 2022年6月 - 2022年10月</p>
+                <ul class="list-disc list-inside text-gray-300 mt-4">
+                    <li>4か月間のインプラントトレーニングプログラムでPython開発に特化した実践的な経験を積みました。</li>
+                    <li>データ処理、自動化、ウェブ開発などのプロジェクトに貢献し、Pythonプログラミングの原則を効果的に適用しました。</li>
+                    <li>コーディング演習やさまざまなプロジェクトへの協力を通じて、問題解決能力とデバッグスキルを向上させました。</li>
+                </ul>
+            </div>
+            <div id="tab2" class="tab-content mt-4">
+                <h3 class="text-2xl font-bold text-blue-400">編集インターン</h3>
+                <p class="text-gray-300 mt-2">Vaave | 2022年6月 - 2023年12月</p>
+                <ul class="list-disc list-inside text-gray-300 mt-4">
+                    <li>編集チームと協力し、ブログ、ニュースレター、ソーシャルメディアプラットフォーム向けの魅力的なコンテンツの作成および編集を担当しました。ブランドの視認性とユーザーエンゲージメントを向上させました。</li>
+                </ul>
+            </div>
         </div>
-    </section>
-    
+    </div>
+</section>
+
     <style>
         .tabs-container {
             background-color: #1F2937; /* Dark background for tab container */
@@ -246,85 +241,77 @@ document.getElementById("language-toggle").addEventListener("click", function() 
     <!-- Skills Section -->
     <section id="skills" class="py-20 bg-gray-900">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold gradient-text mb-8 text-center">Skills</h2>
+            <h2 class="text-4xl font-bold gradient-text mb-8 text-center">スキル</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="glass p-6 rounded-lg hover-scale">
                     <h3 class="text-xl font-bold text-blue-400">Android</h3>
-                    <p class="text-gray-300 mt-2">Flutter , Android Studio (Java)</p>
+                    <p class="text-gray-300 mt-2">Flutter 、Android Studio (Java)</p>
                 </div>
                 <div class="glass p-6 rounded-lg hover-scale">
-                    <h3 class="text-xl font-bold text-blue-400">Frontend</h3>
-                    <p class="text-gray-300 mt-2">HTML, CSS, JavaScript, React, Tailwind CSS</p>
+                    <h3 class="text-xl font-bold text-blue-400">フロントエンド</h3>
+                    <p class="text-gray-300 mt-2">HTML、CSS、JavaScript、React、Tailwind CSS</p>
                 </div>
                 <div class="glass p-6 rounded-lg hover-scale">
-                    <h3 class="text-xl font-bold text-blue-400">Backend</h3>
-                    <p class="text-gray-300 mt-2">Django, Node.js, Express, Python</p>
+                    <h3 class="text-xl font-bold text-blue-400">バックエンド</h3>
+                    <p class="text-gray-300 mt-2">Django、Node.js、Express、Python</p>
                 </div>
                 <div class="glass p-6 rounded-lg hover-scale">
-                    <h3 class="text-xl font-bold text-blue-400">Database</h3>
-                    <p class="text-gray-300 mt-2">MySQL, MongoDB</p>
+                    <h3 class="text-xl font-bold text-blue-400">データベース</h3>
+                    <p class="text-gray-300 mt-2">MySQL、MongoDB</p>
                 </div>
                 <div class="glass p-6 rounded-lg hover-scale">
                     <h3 class="text-xl font-bold text-blue-400">DevOps</h3>
-                    <p class="text-gray-300 mt-2">Docker, Kubernetes, CI/CD</p>
+                    <p class="text-gray-300 mt-2">Docker、Kubernetes、CI/CD</p>
                 </div>
             </div>
         </div>
     </section>
+    
 
     <!-- Projects Section -->
     <section id="projects" class="py-20 bg-gray-800">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold gradient-text mb-8 text-center">Projects</h2>
+            <h2 class="text-4xl font-bold gradient-text mb-8 text-center">プロジェクト</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="glass p-6 rounded-lg hover-scale">
-                    <h3 class="text-xl font-bold text-blue-400">Enhancing Feedback Management
-                        with Sanjivani</h3>
-                    <p class="text-gray-300 mt-2"> <li>Revamped the feedback management system on
-                        Android, which cut user response time by 25% and
-                        boosted feedback submissions by 40% in just 3
-                        months through enhanced integration
-                        improvement</li></p>
-                </div>
-                <div class="glass p-6 rounded-lg hover-scale">
-                    <h3 class="text-xl font-bold text-blue-400">Streamlining Temple Bookings</h3>
+                    <h3 class="text-xl font-bold text-blue-400">Sanjivaniを活用したフィードバック管理の強化</h3>
                     <p class="text-gray-300 mt-2">
-                        <li>Designed and developed a PHP-based backend and
-                            Android application to simplify temple booking
-                            processes, enabling 5,000+ users to book services
-                            seamlessly</li>
+                        <li>Android上でフィードバック管理システムを刷新し、ユーザーの応答時間を25％短縮し、統合改善によって3か月でフィードバック提出を40％向上させました。</li>
                     </p>
                 </div>
                 <div class="glass p-6 rounded-lg hover-scale">
-                    <h3 class="text-xl font-bold text-blue-400">Implementing CO/PO Mapping
-                        through Python and Web
-                        Integration</h3>
+                    <h3 class="text-xl font-bold text-blue-400">寺院予約の効率化</h3>
                     <p class="text-gray-300 mt-2">
-                        <li>Integrated course outcomes and program outcomes
-                            using Python.</li>
-                        <li>Developed a web application for mapping
-                            educational outcomes.</li>
+                        <li>PHPベースのバックエンドおよびAndroidアプリケーションを設計・開発し、5,000人以上のユーザーがシームレスにサービスを予約できるようにしました。</li>
+                    </p>
+                </div>
+                <div class="glass p-6 rounded-lg hover-scale">
+                    <h3 class="text-xl font-bold text-blue-400">PythonとWeb統合を活用したCO/POマッピングの実装</h3>
+                    <p class="text-gray-300 mt-2">
+                        <li>Pythonを使用してコース成果とプログラム成果を統合しました。</li>
+                        <li>教育成果をマッピングするためのWebアプリケーションを開発しました。</li>
                     </p>
                 </div>
             </div>
         </div>
     </section>
+    
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-900">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold gradient-text mb-8">Contact Me</h2>
-            <p class="text-gray-300 mb-4">Feel free to reach out to me at <a href="mailto:ishansasane@example.com" class="text-blue-400">ishansasane@gmail.com</a></p>
-        </div>
-    </section>
+   <!-- お問い合わせセクション -->
+<section id="contact" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold gradient-text mb-8">お問い合わせ</h2>
+        <p class="text-gray-300 mb-4">お気軽にこちらからご連絡ください：<a href="mailto:ishansasane@example.com" class="text-blue-400">ishansasane@gmail.com</a></p>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="py-6 bg-gray-900/50 glass">
-        <div class="container mx-auto px-6 text-center">
-            <p class="text-gray-300">&copy; 2023 Ishan Sasane. All rights reserved.</p>
-            <a href="path/to/your/resume.pdf" download class="mt-4 inline-block px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">Download Resume</a>
-        </div>
-    </footer>
+<!-- フッター -->
+<footer class="py-6 bg-gray-900/50 glass">
+    <div class="container mx-auto px-6 text-center">
+        <p class="text-gray-300">&copy; 2023 Ishan Sasane. 全著作権所有。</p>
+        <a href="path/to/your/resume.pdf" download class="mt-4 inline-block px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">履歴書をダウンロード</a>
+    </div>
+</footer>
 
     <!-- Script for Tabs -->
     <script>

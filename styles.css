@@ -11,13 +11,13 @@ body {
 
 /* Box model styles */
 .box {
-    width: 300px;            /* Content width */
-    padding: 20px;           /* Space between content and border */
-    border: 5px solid #333;  /* Border around the box */
-    margin: 30px;            /* Space around the box */
-    background-color: #ffffff; /* Background color for the content */
-    box-sizing: border-box;   /* Makes the padding and border part of the width */
-    text-align: center;      /* Center the text inside the box */
+    width: 300px;            
+    padding: 20px;           
+    border: 5px solid #333;  
+    margin: 30px;            
+    background-color: #ffffff; 
+    box-sizing: border-box;   
+    text-align: center;      
 }
 
 /* Optional: Add hover effect for better UX */
